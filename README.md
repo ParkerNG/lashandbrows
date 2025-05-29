@@ -1,6 +1,12 @@
 # Lashandbrows
 ### https://github.com/angular-schule/angular-cli-ghpages
 
+#### Build and Push to the gh-pages branch in github
+```bash
+ng deploy
+```
+#### Remember to commit to main
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
 
 ## Development server
