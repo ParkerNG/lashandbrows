@@ -3,7 +3,7 @@
 
 #### Build and Push to the gh-pages branch in github
 ```bash
-ng deploy
+ng deploy --base-href="//lashandbrows\\"
 ```
 #### Remember to commit to main
 
