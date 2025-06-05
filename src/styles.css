@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+/* --- Global Styles --- */
+:root {
+  /* Primary Color Palette */
+  --primary-color: #ffeee9;
+  --secondary-color: #d7ac9c;
+  --accent-color: #e74c3c;       /* Red */
+  --background-color: #f4f4f4;   /* Light gray */
+  --text-color: #000000;         /* Dark gray for text */
+  --heading-color: #2c3e50;      /* Darker gray for headings */
+  --link-color: #3498db;         /* Blue for links */
+  --link-hover-color: #2980b9;   /* Dark blue for link hover */
+  
+  /* Font settings */
+  --font-family: 'Inter', 'Arial', sans-serif;  /* Base font */
+  --heading-font-family: 'Inter', 'Roboto', sans-serif;  /* Headings font */
+  --font-size: 16px;                   /* Base font size */
+  --heading-font-size: 2.5rem;         /* Heading font size */
+  --subheading-font-size: 1.75rem;     /* Subheading font size */
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  background-color: var(--primary-color);  /* Use primary color for navbar */
+  padding: 1rem;
+  font-family: var(--font-family);
+}
+
+.home {
+  background-color: black;
+}
+
+/* --- Media Queries (Responsive Design) --- */
+@media (max-width: 768px) {
+  .navbar .navbar-toggler {
+    display: block;
+  }
+
+  .navbar .navbar-collapse {
+    display: none;
+  }
+
+  .navbar .navbar-collapse.show {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

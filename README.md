@@ -1,6 +1,11 @@
 # Lashandbrows
 ### https://github.com/angular-schule/angular-cli-ghpages
 
+#### Local build
+```bash
+ng serve --serve-path lashandbrows
+```
+
 #### Build and Push to the gh-pages branch in github
 ```bash
 ng deploy --base-href="//lashandbrows\\"
