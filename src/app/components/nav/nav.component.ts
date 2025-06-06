@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-nav',
@@ -7,6 +8,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
-export class NavComponent {
+export class NavComponent{
+
+  closeOffcanvas(): void {
+    document.getElementById('closeOffcanvasButton')?.click();
+  }
 
 }

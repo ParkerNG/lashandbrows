@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <nav class="navbar navbar-expand-md sticky-top row">
+  <!-- <nav class="navbar navbar-expand-md sticky-top row">
     <div class="col-12 text-center">
       <a class="navbar-brand" href="#">DESIGN By KIM</a>
     </div>
@@ -17,6 +17,35 @@
           <a class="nav-link" routerLink="about">ABOUT</a>
         </li>
       </ul>
+    </div>
+  </nav> -->
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid d-flex align-items-center">
+      <a class="navbar-brand mx-auto" href="#">DESIGN By KIM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" id="closeOffcanvasButton" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body row">
+          <div class="col text-center">
+            <ul class="navbar-nav row">
+              <li class="nav-item col">
+                <a class="nav-link active" (click)="closeOffcanvas()" aria-current="page" routerLink="">HOME</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" (click)="closeOffcanvas()" routerLink="services">SERVICES</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" (click)="closeOffcanvas()" routerLink="about">ABOUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 </div>
