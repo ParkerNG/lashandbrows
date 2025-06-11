@@ -6,3 +6,23 @@
     background-repeat: no-repeat;
     color: var(--text-color);
 }
+
+.intro {
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 0 #d7ac9c, -1px -1px 0 #d7ac9c, 1px -1px 0 #d7ac9c, -1px 1px 0 #d7ac9c;
+}
+
+.custom-heading {
+  font-size: 2.5rem; /* 6 times the root font size */
+}
+
+.btn-outline {
+    border-width: 3px;
+    padding: 12px 25px;
+    font-size: x-large;
+    color: white;
+    background-color: var(--secondary-color);;
+    transition: background-color 0.45s ease;
+}
