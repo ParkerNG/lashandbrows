@@ -1,0 +1,8 @@
+.home {
+    background-image: url("/lashandbrows/header-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+}

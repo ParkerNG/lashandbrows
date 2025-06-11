@@ -39,12 +39,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family);
 }
 
-.home {
-  background-color: black;
-}
-
 .nav-offset {
     height: 52px !important;
+    padding: 0%;
+    margin: 0%;
 }
 
 /* --- Media Queries (Responsive Design) --- */
