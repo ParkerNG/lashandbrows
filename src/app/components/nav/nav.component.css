@@ -1,5 +1,6 @@
 .offcanvas {
     background-color: var(--secondary-color);
+    font-size: 1.25rem;
 }
 
 .navbar-brand {

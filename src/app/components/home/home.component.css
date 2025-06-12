@@ -8,7 +8,10 @@
 }
 
 .intro {
-    padding-top: 200px;
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    padding-bottom: 200px;
     text-align: center;
     color: white;
     text-shadow: 1px 1px 0 #d7ac9c, -1px -1px 0 #d7ac9c, 1px -1px 0 #d7ac9c, -1px 1px 0 #d7ac9c;
@@ -21,7 +24,7 @@
 .btn-outline {
     border-width: 3px;
     padding: 12px 25px;
-    font-size: x-large;
+    font-size: 2rem;
     color: white;
     background-color: var(--secondary-color);;
     transition: background-color 0.45s ease;
