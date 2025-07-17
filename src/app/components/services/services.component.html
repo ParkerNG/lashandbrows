@@ -1,8 +1,17 @@
 <h1 class="nav-offset">Design By Kim</h1>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <img src="/lashandbrows/header-bg.jpg" width="128px" height="160px" alt="">
+    <div class="row justify-content-center mt-4" *ngFor="let img of naturalImages">
+        <div class="col"></div>
+        <div class="col text-center">
+            <div class="card" style="width: 400px;">
+                <img [src]="img" class="card-img-top" alt="Natural Image">
+                <div class="card-body">
+                    <h5 class="card-title">Natural Brows</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias ratione maiores placeat, ea accusamus. Sunt, aperiam assumenda</p>
+                    <a  class="btn btn-primary">I WANT THIS</a>
+                </div>
+            </div>
         </div>
+        <div class="col"></div>
     </div>
 </div>
