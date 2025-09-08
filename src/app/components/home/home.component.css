@@ -1,7 +1,14 @@
-.home {
-    background-image: url("/lashandbrows/header-bg.jpg");
-    height: 100vh;
+.base {
+    background: url("/lashandbrows/header-bg.jpg");
     background-size: cover;
+    background-position: center;
+}
+
+.home {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), 
+            url("/lashandbrows/header-bg.jpg");
+    height: 100vh;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--text-color);
@@ -11,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;  /* Aligns to the bottom of the container */
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .intro {
