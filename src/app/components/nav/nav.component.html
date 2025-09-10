@@ -1,65 +1,28 @@
-
-  <!-- <nav class="navbar sticky-top row">
-    <div class="col-12 text-center">
-      <a class="navbar-brand" href="#">DESIGN By KIM</a>
-    </div>
-  </nav>
-  <nav class="navbar navbar-expand-md sticky-top row">
-    <div class="col text-center">
-      <ul class="navbar-nav row justify-content-center">
-        <li class="nav-item col">
-          <a class="nav-link active" aria-current="page" routerLink="">HOME</a>
+<header>
+  <a class="navbar-brand mx-auto site-heading text-center text-faded d-none d-lg-block" href="#">
+    <img src="/lashandbrows/logo.png" alt="Design by KIM Logo" height="160">
+  </a>
+</header>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+  <div class="container text-center">
+    <button class="navbar-toggler hidden-element" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand text-center text-uppercase d-lg-none mx-auto" href="#">
+      <img src="/lashandbrows/logo.png" alt="Design by KIM" height="100">
+    </a>
+    <button class="navbar-toggler" id="closeOffcanvasButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link active" (click)="closeOffcanvas()" aria-current="page" routerLink="">HOME</a>
         </li>
-        <li class="nav-item col">
-          <a class="nav-link" routerLink="services">SERVICES</a>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" (click)="closeOffcanvas()" routerLink="services">SERVICES</a>
         </li>
-        <li class="nav-item col">
-          <a class="nav-link" routerLink="about">ABOUT</a>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" (click)="closeOffcanvas()" routerLink="about">ABOUT</a>
         </li>
       </ul>
     </div>
-  </nav> -->
-
-  <nav class="navbar fixed-top px-0">
-    <div class="container-fluid d-flex align-items-center">
-      <a class="navbar-brand mx-auto" href="#">
-        <img src="/lashandbrows/logo.png" alt="Design by KIM Logo" height="150">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
-        <div class="offcanvas-header row">
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <button type="button" class="btn-close" id="closeOffcanvasButton" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col text-center">
-                <a class="navbar-brand mx-auto" href="#">
-                  <img src="/lashandbrows/logo.png" alt="Design by KIM" height="200">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="offcanvas-body row">
-          <div class="col text-center">
-            <ul class="navbar-nav row">
-              <li class="nav-item col">
-                <a class="nav-link active" (click)="closeOffcanvas()" aria-current="page" routerLink="">HOME</a>
-              </li>
-              <li class="nav-item col">
-                <a class="nav-link" (click)="closeOffcanvas()" routerLink="services">SERVICES</a>
-              </li>
-              <li class="nav-item col">
-                <a class="nav-link" (click)="closeOffcanvas()" routerLink="about">ABOUT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+  </div>
+</nav>

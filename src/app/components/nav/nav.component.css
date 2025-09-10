@@ -1,12 +1,8 @@
-.offcanvas {
-    background-color: var(--secondary-color);
-    font-size: 1.25rem;
-}
-
-.navbar-brand {
-    font-size: 2.5rem;
-}
-
 .navbar {
-    background-color: transparent;
+    background-color: var(--secondary-color);
+}
+
+.hidden-element {
+  visibility: hidden;
+  pointer-events: none;
 }
