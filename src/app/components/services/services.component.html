@@ -1,16 +1,82 @@
-<div class="container-fluid">
-    <div class="row justify-content-center mt-4" *ngFor="let img of naturalImages">
-        <div class="col"></div>
-        <div class="col text-center">
-            <div class="card" style="width: 400px;">
-                <img [src]="img" class="card-img-top" alt="Natural Image">
-                <div class="card-body">
-                    <h5 class="card-title">Natural Brows</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias ratione maiores placeat, ea accusamus. Sunt, aperiam assumenda</p>
-                    <a  class="btn btn-primary">BOOK NOW</a>
-                </div>
-            </div>
+<div class="container text-center mt-5">
+  <h2 class="header text-center my-1 pt-2">Our Services</h2>
+  <div class="divider"></div>
+  <!-- Natural Brows Carousel -->
+<div class="row mb-4 justify-content-center">
+  <h3 class="sub-header">Natural Brows</h3>
+
+  <div class="col-12 col-lg-8 d-flex justify-content-center">
+      <div id="naturalCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Loop through naturalImages array -->
+          <div class="carousel-item" *ngFor="let img of naturalImages; let i = index" [class.active]="i === 0">
+            <img [src]="img" class="d-block w-100" alt="Natural Brows Image">
+          </div>
         </div>
-        <div class="col"></div>
+        <div class="book-button mx-auto"><a class="btn btn-primary btn-lg">BOOK NOW</a></div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#naturalCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#naturalCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+  </div>
+    <div class="divider"></div>
+  <!-- Ombre Brows Carousel -->
+  <div class="row mb-4 justify-content-center">
+    <h3 class="sub-header">Ombre Brows</h3>
+    
+    <div class="col-12 col-lg-8 d-flex justify-content-center">
+      <div id="ombreCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Loop through ombreImages array -->
+          <div class="carousel-item" *ngFor="let img of ombreImages; let i = index" [class.active]="i === 0">
+            <img [src]="img" class="d-block w-100" alt="Ombre Brows Image">
+          </div>
+        </div>
+        <div class="book-button mx-auto"><a class="btn btn-primary">BOOK NOW</a></div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#ombreCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ombreCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    <div class="divider"></div>
+  <!-- Design Brows Carousel -->
+  <div class="row mb-4 justify-content-center">
+    <h3 class="sub-header">Design Brows</h3>
+
+    <div class="col-12 col-lg-8 d-flex justify-content-center">
+      <div id="designCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Loop through designImages array -->
+          <div class="carousel-item active">
+            <img [src]="designImages[0]" class="d-block w-100" alt="Design Brows Image">
+          </div>
+        </div>
+        <div class="book-button mx-auto"><a class="btn btn-primary">BOOK NOW</a></div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#designCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#designCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
 </div>
