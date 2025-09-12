@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 /* --- Global Styles --- */
+@font-face {
+  font-family: 'BridgingProgress';
+  src: url('/lashandbrows/BridgingProgress.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   /* Primary Color Palette */
   --primary-color: #ffeee9 ;
@@ -12,7 +19,7 @@
   --link-hover-color: #2980b9;   /* Dark blue for link hover */
   
   /* Font settings */
-  --font-family: 'Inter', 'Arial', sans-serif;  /* Base font */
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Base font */
   --heading-font-family: 'Inter', 'Roboto', sans-serif;  /* Headings font */
   --font-size: 16px;                   /* Base font size */
   --heading-font-size: 2.5rem;         /* Heading font size */
