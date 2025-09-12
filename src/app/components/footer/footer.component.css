@@ -1,6 +1,6 @@
 .footer {
     margin-top: 2rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
