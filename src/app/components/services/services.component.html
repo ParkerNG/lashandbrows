@@ -71,7 +71,9 @@
             <img [src]="img" class="d-block w-100" alt="Ombre Brows Image">
           </div>
         </div>
-        <div class="book-button mx-auto"><a class="btn btn-primary btn-lg">DETAILS</a></div>
+        <div class="book-button mx-auto">
+          <a class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ombreBrowsModal">DETAILS</a>
+        </div>
         <!-- Carousel Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#ombreCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
@@ -81,6 +83,30 @@
           <span class="carousel-control-next-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ombreBrowsModal" tabindex="-1" aria-labelledby="ombreBrowsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button type="button" class="btn-close hidden-element" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5 text-center mx-auto" id="ombreBrowsModalLabel">OMBRE BROWS DESIGN</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <h6>
+              Hiệu ứng ombre: nhạt ở đầu, đậm dần về đuôi - mềm mại nhưng rõ nét.
+              <br>
+              Phù hợp với khách hàng muốn đôi mày gọn gàng, chỉnh chu, màu sắc nhạt dần theo thời gian.
+            </h6>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="navigateToPricing()">Pricing</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
