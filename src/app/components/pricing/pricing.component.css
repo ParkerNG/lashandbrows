@@ -1,0 +1,34 @@
+.card-title {
+    font-family: 'BridgingProgress';
+    font-size: 1.25rem;
+}
+@media (max-width: 767px) {
+    .card-title {
+        font-size: 1rem; /* Reduce font size on smaller screens */
+    }
+}
+
+.card {
+    background-color: var(--primary-color);
+}
+
+.btn {
+    font-family: 'BridgingProgress';
+}
+
+.btn-primary {
+  --bs-btn-color: white;
+  --bs-btn-bg: var(--secondary-color);;
+  --bs-btn-border-color: var(--secondary-color);;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: var(--primary-color);;
+  --bs-btn-hover-border-color: var(--secondary-color);
+  --bs-btn-focus-shadow-rgb: 196, 142, 73;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: var(--primary-color);;
+  --bs-btn-active-border-color: var(--primary-color);;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: var(--secondary-color);
+  --bs-btn-disabled-border-color: var(--secondary-color);
+}

@@ -31,7 +31,7 @@ export class ServicesComponent {
 
   ombreImages = [
     '/lashandbrows/ombre-2.jpg',
-    '/lashandbrows/design-1.jpg'
+    '/lashandbrows/design.jpg'
   ];
 
   designImages = [
