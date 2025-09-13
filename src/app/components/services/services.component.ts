@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'
+import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-services',
   imports: [CommonModule],
@@ -7,6 +9,9 @@ import { CommonModule } from '@angular/common'
   styleUrl: './services.component.css'
 })
 export class ServicesComponent {
+  constructor(
+    private router: Router
+  ){}
 
   naturalImages = [
     '/lashandbrows/natural-1.jpg',
@@ -32,5 +37,10 @@ export class ServicesComponent {
   designImages = [
     '/lashandbrows/design.jpg'
   ]
+
+  /* FUNCTIONS */
+  navigateToPricing() {
+    this.router.navigate(['/pricing']);
+  }
 
 }

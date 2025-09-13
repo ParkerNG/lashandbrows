@@ -20,7 +20,7 @@
 }
 
 
-.header, .sub-header {
+.header, .sub-header, .modal-title {
     font-family: 'BridgingProgress';
     font-size: 2rem;
     color: white;
@@ -50,4 +50,12 @@
 .book-button {
     position: relative;
     bottom: 6rem;
+}
+
+.modal-content {
+    background-color: var(--primary-color);
+}
+
+.modal-title {
+    color: black;
 }
