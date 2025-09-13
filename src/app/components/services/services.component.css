@@ -19,19 +19,17 @@
   --bs-btn-disabled-border-color: var(--secondary-color);
 }
 
-.btn-xl {
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 
 .header, .sub-header {
     font-family: 'BridgingProgress';
     font-size: 2rem;
-    color: #ffffff;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .header, .sub-header {
+        font-size: 1.5rem; /* Reduce font size on smaller screens */
+    }
 }
 
 .header {
@@ -51,5 +49,5 @@
 
 .book-button {
     position: relative;
-    bottom: 8rem;
+    bottom: 6rem;
 }
