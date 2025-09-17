@@ -1,5 +1,6 @@
 .intro {
   position: relative;
+  z-index: 999;
 }
 @media (min-width: 992px) {
   .intro .intro-img {
@@ -83,4 +84,17 @@
   display: block;
   clear: both;
   content: "";
+}
+
+.cta {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
 }
