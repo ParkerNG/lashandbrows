@@ -25,12 +25,18 @@ export class ServicesComponent {
   ];
 
   ombreImages = [
+    '/lashandbrows/ombre-1.jpg',
     '/lashandbrows/ombre-2.jpg',
-    '/lashandbrows/design.jpg'
+    '/lashandbrows/ombre-3.jpg',
+    '/lashandbrows/ombre-4.jpg',
+    '/lashandbrows/ombre-5.jpg',
+    '/lashandbrows/ombre-6.jpg',
+    '/lashandbrows/ombre-7.jpg',
+    '/lashandbrows/ombre-8.jpg'
   ];
 
   designImages = [
-    '/lashandbrows/ombre-1.jpg'
+    '/lashandbrows/design-1.jpg'
   ]
 
   /* FUNCTIONS */
