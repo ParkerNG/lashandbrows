@@ -162,4 +162,57 @@
     </div>
   </div>
 
+  <div class="divider"></div>
+  
+  <!-- Men Brows Carousel -->
+  <div class="row mb-4 justify-content-center">
+    <h3 class="sub-header">Men Brows</h3>
+    <!-- Carousel     -->
+    <div class="col-12 col-lg-8 d-flex justify-content-center">
+      <div id="menCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Loop through ombreImages array -->
+          <div class="carousel-item" *ngFor="let img of menImages; let i = index" [class.active]="i === 0">
+            <img [src]="img" class="d-block w-100" alt="Men Brows Image">
+          </div>
+        </div>
+        <div class="details-button mx-auto">
+          <a class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#menBrowsModal">DETAILS</a>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#menCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width: 10rem; height: 10rem;"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Men Modal -->
+    <div class="modal fade" id="menBrowsModal" tabindex="-1" aria-labelledby="menBrowsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button type="button" class="btn-close hidden-element" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5 text-center mx-auto" id="menBrowsModalLabel">MEN BROWS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <h6>
+              Thiết kế chân mày cho nam: tự nhiên, cân đối, gọn gàng nhưng vẫn mạnh mẽ.
+              <br>
+              Phù hợp với nam giới muốn mày rõ nét mà vẫn giữ vẻ tự nhiên, không bị làm quá.
+            </h6>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="navigateToPricing()">Pricing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

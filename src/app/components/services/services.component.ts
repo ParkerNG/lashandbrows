@@ -37,7 +37,15 @@ export class ServicesComponent {
 
   designImages = [
     '/lashandbrows/design-1.jpg'
+  ];
+
+  menImages = [
+    '/lashandbrows/men-1.jpg',
+    '/lashandbrows/men-2.jpg',
+    '/lashandbrows/men-3.jpg',
+    '/lashandbrows/men-4.jpg',
   ]
+
 
   /* FUNCTIONS */
   navigateToPricing() {
