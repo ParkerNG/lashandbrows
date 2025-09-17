@@ -45,7 +45,7 @@
     }
 }
 
-.header {
+.header, .card-title {
     font-weight: bold;
 }
 
