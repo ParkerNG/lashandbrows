@@ -17,16 +17,11 @@ export class ServicesComponent {
     '/lashandbrows/natural-1.jpg',
     '/lashandbrows/natural-2.jpg',
     '/lashandbrows/natural-3.jpg',
-    // '/lashandbrows/natural-4.jpg',
+    '/lashandbrows/natural-4.jpg',
     '/lashandbrows/natural-5.jpg',
-    // '/lashandbrows/natural-6.jpg',
+    '/lashandbrows/natural-6.jpg',
     '/lashandbrows/natural-7.jpg',
-    '/lashandbrows/natural-8.jpg',
-    '/lashandbrows/natural-9.jpg',
-    '/lashandbrows/natural-10.jpg',
-    // '/lashandbrows/natural-11.jpg',
-    '/lashandbrows/natural-12.jpg',
-    '/lashandbrows/natural-13.jpg'
+    '/lashandbrows/natural-8.jpg'
   ];
 
   ombreImages = [
