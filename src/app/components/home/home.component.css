@@ -93,8 +93,15 @@
   background-color: var(--primary-color);
   border-radius: 5px;
 }
-.cta .cta-inner {
-  position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
+
+.card {
+  background-color: var(--secondary-color);
+}
+
+.card-body {
+  background-color: var(--primary-color);
+}
+
+.table  {
+  --bs-table-bg: var(--primary-color);
 }
