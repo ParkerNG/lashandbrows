@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <h5 class="card-title">NATURAL BROWS</h5>
                     <p class="card-text">$XXX.00</p>
-                    <a class="btn btn-primary">BOOK NOW</a>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingFormModal">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 <div class="card-body">
                     <h5 class="card-title">OMBRE BROWS</h5>
                     <p class="card-text">$XXX.00</p>
-                    <a class="btn btn-primary">BOOK NOW</a>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingFormModal">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                 <div class="card-body">
                     <h5 class="card-title">BROWS DESIGN</h5>
                     <p class="card-text">$XXX.00</p>
-                    <a class="btn btn-primary">BOOK NOW</a>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingFormModal">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -55,9 +55,26 @@
                 <div class="card-body">
                     <h5 class="card-title">MEN BROWS</h5>
                     <p class="card-text">$XXX.00</p>
-                    <a class="btn btn-primary">BOOK NOW</a>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingFormModal">BOOK NOW</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="bookingFormModal" tabindex="-1" aria-labelledby="bookingFormModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingFormModalLabel">Google Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Google Form Embed -->
+        <iframe src="https://forms.gle/F4ZUfiNtqt3HQayi8?embedded=true" width="100%" height="800px" frameborder="0">Loading…</iframe>
+      </div>
+    </div>
+  </div>
 </div>
